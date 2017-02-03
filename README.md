@@ -1,2 +1,2 @@
-# sevensky-cordova-plugin-intent
-Cordova plugin use intent android
+# sevensky-cordova-plugin-startactivity
+Cordova plugin startActivity for android devices
