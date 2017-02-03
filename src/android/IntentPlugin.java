@@ -1,4 +1,4 @@
-package sevensky.plugins.startactivity;
+package sevensky.plugins;
 
 import android.content.ComponentName;
 import android.content.Intent;

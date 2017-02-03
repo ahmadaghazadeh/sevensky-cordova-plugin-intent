@@ -22,7 +22,7 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="sevensky-cordova-plugin-intent"
-    version="1.0.0-dev">
+    version="1.0.1-dev">
     <name>StartActivity</name>
     <description>Sevensky Plugins</description>
     <license>Apache 2.0</license>
