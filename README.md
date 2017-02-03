@@ -1,5 +1,9 @@
 # sevensky-cordova-plugin-startactivity
-Cordova plugin startActivity for android devices
+Cordova plugin startActivity for android devices 
+
+Feature :
++ StartActivity 
++ PutExtra string format
 
 Install :
 
