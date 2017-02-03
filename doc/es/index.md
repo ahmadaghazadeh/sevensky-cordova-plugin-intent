@@ -22,7 +22,16 @@
    work with android intent
    
    
-   
+## Usage 
+
+        document.getElementById("btn_start").addEventListener("click", startPurchase);
+
+        function startPurchase() {
+            var obj = new Object();
+            obj.name = "Ahmad";
+            obj.family = "Aghazadeh";
+            intentPlugin.startActivity("com.xomorod.fastbook", "PurchaseActivity", JSON.stringify(obj));
+        }  
     
 
 ## Instalación
@@ -30,7 +39,6 @@
     cordova plugin add sevensky-cordova-plugin-intent
 
 ### Plataformas soportadas
-
 
 *   Android
 
