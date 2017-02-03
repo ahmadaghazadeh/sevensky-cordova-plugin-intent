@@ -1,4 +1,4 @@
-package sevensky.plugins;
+package sevensky.cordova.plugins;
 
 import android.content.ComponentName;
 import android.content.Intent;

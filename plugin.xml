@@ -22,10 +22,10 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="sevensky-cordova-plugin-intent"
-    version="1.0.1-dev">
-    <name>StartActivity</name>
+    version="1.0.3-dev">
+    <name>AndroidIntent</name>
     <description>Sevensky Plugins</description>
-    <license>Apache 2.0</license>
+    <license>MIT License</license>
     <keywords>cordova,android,intent</keywords>
     <repo>https://github.com/ahmadaghazadeh/sevensky-cordova-plugin-intent</repo>
     <issue>https://issues.apache.org/jira/browse/CB/component/12320648</issue>
@@ -38,11 +38,11 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="IntentPlugin" >
-                <param name="android-package" value="sevensky.plugins"/>
+                <param name="android-package" value="sevensky.cordova.plugins.IntentPlugin"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/IntentPlugin.java" target-dir="src/sevensky/plugins" />
+        <source-file src="src/android/IntentPlugin.java" target-dir="src/sevensky/cordova/plugins" />
     </platform>
 
 
