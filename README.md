@@ -12,9 +12,9 @@ Install :
 Usage :
 
 
-        document.getElementById("btn_device_name").addEventListener("click", deviceNmae);
+        document.getElementById("btn_device_name").addEventListener("click", purchase);
 
-        function log() {
+        function purchase() {
             var obj = new Object();
             obj.name = "Ahmad";
             obj.family = "Aghazadeh";
