@@ -22,7 +22,7 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="sevensky-cordova-plugin-intent"
-    version="1.0.6">
+    version="1.1.0">
     <name>AndroidIntent</name>
     <description>Sevensky Plugins</description>
     <license>MIT License</license>
