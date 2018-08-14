@@ -1,9 +1,11 @@
 # sevensky-cordova-plugin-startactivity
 Cordova plugin startActivity for android devices 
 
-Feature :
+Features :
 + StartActivity 
 + PutExtra string format
++ Intent action
++ Intent data URI
 
 Install :
 
@@ -18,5 +20,5 @@ Usage :
             var obj = new Object();
             obj.name = "Ahmad";
             obj.family = "Aghazadeh";
-            intentPlugin.startActivity("com.xomorod.fastbook", "PurchaseActivity", JSON.stringify(obj));
+            intentPlugin.startActivity("com.xomorod.fastbook", "PurchaseActivity", null, null, JSON.stringify(obj));
         }
