@@ -34,7 +34,7 @@ public class IntentPlugin extends CordovaPlugin {
     }
 
 
-    private void startActivity(String appName,String activityName, CallbackContext callbackContext,Bundle bundle) {
+    private void startActivity(String appName, String activityName, CallbackContext callbackContext,Bundle bundle) {
         if (appName != null && appName.length() > 0) {
             Intent intent = new Intent();
             intent.putExtras(bundle);
@@ -45,4 +45,17 @@ public class IntentPlugin extends CordovaPlugin {
             callbackContext.error("Expected one non-empty string argument.");
         }
     }
-}
+
+    // this function is useful to call activity from different module. This will be useful if you integrated another app within you base app using Android Library Module and wanted to call activity from that module.
+    private void startActivity(String appName, String moduleName,String activityName, CallbackContext callbackContext,Bundle bundle) {
+        if (appName != null && appName.length() > 0) {
+            Intent intent = new Intent();
+            intent.putExtras(bundle);
+            intent.setComponent(new ComponentName(appName, moduleName+"."+activityName));
+            this.cordova.getActivity().startActivity(intent);
+            callbackContext.success(moduleName+"."+activityName);
+        } else {
+            callbackContext.error("Expected one non-empty string argument.");
+        }
+    }
+} 
